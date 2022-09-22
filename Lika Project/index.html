@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
+    <script src="https://kit.fontawesome.com/679ddf24e8.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+<header>
+        <div class="header">
+        <a href="index.html">
+            <div class="title">The <span class="bit">Bit</span> Bank</div>
+        </a>
+        <div class="header-login-btn">
+            <a  href="login.html">
+                <button class="login-btn">
+                    <div class="login">Login</div>
+                </button>
+            </a>
+            <div class="lang">
+                <select class="select" name="" id="">
+                    <option value="eng">En</option>
+                    <option value="fr">Fr</option>
+                </select>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Main conteiner  -->
+<div class="wtf">
+<div class="main-container">
+    <form action="" method="" id="form">
+    <h1>Create Account</h1>
+    <div class="full-name">
+        <div class="first-name">
+            <span id="error"></span>
+            <label for="firstname">First name</label>
+            <input class="input" type="text" name="firstname" id="firstname" oninput="usernameChecker()">
+            <div id="firstname-icon"></div> 
+            <span id="first-name-span"></span>
+           
+        </div>
+        <div class="last-name">
+            <label for="lastname">Last name</label>
+            <input class="input" type="text" name="lastname" id="lastname" oninput="lastNameChecker()">
+            <div id="lastname-icon"></div> 
+            <span id="last-name-span"></span>
+        </div>
+        
+    </div>
+    <div class="input-email">
+        <label for="email">Email</label>
+        <input class="input" type="email" name="email" id="email" oninput="checker()">
+        <div id="icon"></div>   
+        <span id="email-span"></span>   
+    </div>
+    <div class="input-password">
+        <label for="password">Password</label>
+        <input class="input" type="password" name="passwprd" id="password">
+        <img src="img/Vector.svg" alt="password icon">
+    </div>
+    <div class="input-confirm-password">
+        <label for="confirm-password">Confirm Password</label>
+        <input class="input" type="password" name="confirm-password" id="confirm-password">
+        <img src="img/Vector2.svg" alt="password icon">
+    </div>
+    <div class="input-birthday">
+        <label for="birthday">Date Of Birth</label>
+        <input class="input" type="datetime" name="birthday" id="birthday" placeholder="   YYYY-MM-DD">
+    </div>
+    <div class="input-currency">
+        <label for="currency">Currency</label>
+        <input class="input" type="number" name="currency" id="currency">
+    </div>
+    <div class="input-mobile">
+        <label for="mobile">Mobile</label>
+        <input class="input" type="number" name="mobile" id="mobile">
+    </div>
+    <div class="chekbox">
+        <div class="input-chekbox1">
+            <label for="chekbox1"><span>Accept</span> Terms and Conditins</span></label>
+            <input type="checkbox" name="chekbox1" id="chekbox1">
+        </div>
+        <div class="input-chekbox2">
+            <label for="chekbox2"><span>Accept</span> Refund Policy</label>
+            <input type="checkbox" name="chekbox2" id="chekbox2">
+        </div>
+    </div>      
+    <button type="submit" class="reg-button" id="reg-button" onclick="errorFunction()">Registration</button>
+    <div class="input-footer">
+        <p>Have an account? </p>
+        <a href="login.html">Login</a>
+    </div>
+
+</form>
+</div>
+</div>
+    
+
+
+
+
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
